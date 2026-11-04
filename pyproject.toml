@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "revplan"
+version = "9.1.0"
+description = "Reverse production planning from residual inventory: MILP with semi-finished substitution, greedy and genetic algorithms"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0", "scipy>=1.11", "matplotlib>=3.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
